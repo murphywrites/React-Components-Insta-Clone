@@ -5,7 +5,18 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faCircle, faCompass } from '@fortawesome/free-regular-svg-icons';
 import "./SearchBar.css";
 
+
+// const changeSearch = evt => {
+//   // When the input changes, its whole value can be found inside the event object.
+//   // Log out the synthetic event object 'evt' and see for yourself.
+  
+//   if (evt.charCode === 13) {
+//   setSearchEntry( evt.target.value )
+// }
+// }
+
 const SearchBar = (props) => {
+  // const { setSearchEntry } = props;
   return (
     <div className="search-bar-wrapper">
       <div className="social">
@@ -15,6 +26,7 @@ const SearchBar = (props) => {
         <input
           type="text"
           placeholder="Search"
+          // onKeyDown = { changeSearch }
         />
       </form>
       <div className="social-wrapper">
